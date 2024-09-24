@@ -2,7 +2,7 @@
 function checkLogin() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     if (!isLoggedIn) {
-        window.location.href = 'login.html'; 
+        window.location.href = 'index.html'; 
     }
 }
 
@@ -10,7 +10,7 @@ function checkLogin() {
 function logout() {
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('email');
-    window.location.href = 'login.html';  
+    window.location.href = 'index.html';  
 }
 
 // Add product to the users cart
